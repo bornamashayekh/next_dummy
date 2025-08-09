@@ -3,7 +3,10 @@ import classes from "./page.module.css";
 import Link from "next/link";
 import { GetMeals } from "@/lib/meals";
 import { Suspense } from "react";
-
+export const metadata = {
+  title: 'All Meals',
+  description: 'browse the Delicious meals, shared by a food-loving community.',
+};
 async function Meals() {
   const meals = await GetMeals();
   return   <MealsGrid meals={meals}></MealsGrid>
