@@ -9,7 +9,7 @@ export async function generateMetadata({params}) {
   }
   return {
     title: meal.title,
-    descirption: meal.summary,
+    description: meal.summary,
   };
 }
 export default function MealPage({params}) {
